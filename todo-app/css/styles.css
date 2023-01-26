@@ -1,0 +1,7 @@
+.danger {
+  --accent: darkred;
+}
+
+button {
+  text-transform: uppercase;
+}
