@@ -16,7 +16,12 @@
     </header>
     <main>
         <h2>Take Notes, never forget!</h2>
-        <input type="text" id="search-text" placeholder="Filter Todos">
+        <input type="text" id="search-text" placeholder="Filter Notes">
+        <select name="" id="filter-by">
+            <option value="byEdited">Sort by last edited</option>
+            <option value="byCreated">Sort by recently updated</option>
+            <option value="alphabetical">Sort Alphabetically</option>
+        </select>
         <div id="notes"></div>
         <button id="add-note">Create Note</button>
         <form id="name-form" action="">
@@ -27,7 +32,10 @@
     <footer>
         <p>&copy; 2023</p>
     </footer>
+
+    <script src="js/notes-functions.js"></script>
     <script src="js/notes-app.js"></script>
+    
 </body>
 
 </html>

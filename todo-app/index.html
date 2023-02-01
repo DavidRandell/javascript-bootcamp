@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <h1>Todo App!</h1>
@@ -17,15 +19,26 @@
             <p>Filter Todos</p>
             <input type="text" id="filter" placeholder="Filter Todos">
         </label>
-        <div id="todos"></div>
+        <label>
+            Hide Completed: <input type="checkbox" id="hide-completed">
+        </label>
+        
+        <div id="todos">
+            
+        </div>
+
     </main>
     <div>
-        <input type="text" id="new-todo-text" placeholder="Enter something todo">
-        <button id="addTodo">Add Todo</button>
+        <form id="new-todo">
+            <input type="text" placeholder="Enter something todo" name="text">
+            <button id="addTodo">Add Todo</button>
+        </form>
     </div>
     <footer>
         <p>&copy; 2023</p>
     </footer>
+    <script src="js/todo-functions.js"></script>
     <script src="js/todo-app.js"></script>
 </body>
+
 </html>
